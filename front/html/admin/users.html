@@ -1,0 +1,38 @@
+<section ng-controller="AdminController">
+	<core-field>
+	  <core-icon icon="search"></core-icon>
+	  <input placeholder="Zoek gebruikers" flex>
+	</core-field>
+	<paper-shadow z=1 ng-repeat="user in users" style="padding:0 10px 3.5px 10px;font-size:14px">
+		
+			{{user.google.displayName}} werkt in&nbsp;
+			<paper-dropdown-menu label="{{user.location}}">
+				<paper-dropdown class="dropdown">
+			  	<core-menu on-core-select="showToast()">
+			    	<paper-item label="Antwerpen">Antwerpen</paper-item>
+			      <paper-item label="Limburg">Limburg</paper-item>
+			      <paper-item label="Oost-vlaanderen">Oost-vlaanderen</paper-item>
+			      <paper-item label="Vlaams Brabant">Vlaams Brabant</paper-item>
+			      <paper-item label="West-vlaanderen">West-vlaanderen</paper-item>
+			    </core-menu>
+			  </paper-dropdown>
+			</paper-dropdown-menu>
+			&nbsp;en heeft als rol&nbsp;
+			<paper-dropdown-menu label="{{user.userRole}}">
+				<paper-dropdown class="dropdown">
+			  	<core-menu>
+			    	<paper-item label="admin">admin</paper-item>
+			      <paper-item label="gebruiker">gebruiker</paper-item>
+			      <paper-item label="">sectie-chef</paper-item>
+			    </core-menu>
+			  </paper-dropdown>
+			</paper-dropdown-menu>
+			
+		
+	</paper-shadow>
+	<md-toast id="toast2" text="De wijziging bij {{name}} werd opgeslagen.">
+	</md-toast>
+</section>
+
+
+

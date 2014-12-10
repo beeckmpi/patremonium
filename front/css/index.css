@@ -1,0 +1,129 @@
+
+body {
+	background-color: #E3F2FD;
+}
+core-toolbar {
+	background-color: #2196F3;
+	color: #fff;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+[drawer]{
+	background-color: #E3F2FD;
+	width: 400px
+}
+paper-item {
+	padding: 5px 5px;
+	margin-bottom: 2px;
+}
+paper-item a {
+	text-decoration:none;
+	color: #000;
+}
+paper-item .button-content {
+	padding: 0.25em 0.5em; 
+}
+.paper-background {
+	background: #fff;
+	color: #000000;
+	margin: 15px 10px;
+	min-height: 500px;
+	max-height: 80%;
+	/*overflow: auto;*/
+	padding: 15px 20px;
+	font-size: smaller;
+	display:block;
+}
+paper-ripple {
+  color: #2196F3;
+}
+.paper-background header {
+	font-size: larger;
+}
+@media (min-width:1500px){
+  #view {
+    max-width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #dossierSidebar {
+    display:none;
+  }
+}
+
+@media (min-width:1024px) and (max-width: 1499px){
+	#dossierSidebar {
+		display:none;
+	}
+	#view {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width:750px){
+	#infoSidebar {
+		display:none;
+	}
+}
+
+@media (max-width: 440px){
+  core-toolbar h2 {
+    font-size: smaller;
+  }
+}
+core-field {
+border: 1px solid #ddd;
+margin: 10px -5px;
+height: 40px;
+}
+#user-img{
+  height: 40px;
+  border-radius: 25px;
+}
+#username, #settings {
+  font-size: smaller;
+  margin-left: 15px;
+  text-decoration: none;
+  color:#fff;
+}
+
+#username div {
+  height: 15px; padding: 0 0;
+}
+#settings a {
+  font-size: x-small;
+  text-decoration: none;
+  color: #ddd;
+  margin-top: -8px;
+}
+
+paper-ripple, paper-tab {
+  cursor: pointer;
+}
+
+
+
+ul#profile {
+  padding: 0 0;
+}
+
+ul#profile li {
+  padding: 6px 0;
+  margin: 0 0;
+  list-style:none
+}
+
+.label {
+  min-width:100px; margin-right: 5px; font-weight:bold; display:inline-block
+}
+
+div.dossier {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
